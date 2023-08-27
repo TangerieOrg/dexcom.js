@@ -1,0 +1,44 @@
+{
+  "name": "@tangerie/dexcom.js",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "require": "./lib/index.js",
+      "default": "./lib/index.modern.js"
+    }
+  },
+  "main": "./lib/index.js",
+  "module": "./lib/index.module.js",
+  "umd": "./lib/index.umd.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "start": "ts-node cli/cli.ts",
+    "build": "microbundle --target node",
+    "watch": "microbundle watch --target node",
+    "validate": "tsc --noEmit",
+    "prepare": "npm run build",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "files": [
+    "lib/*"
+  ],
+  "author": "Tangerie <josh.cavill01@gmail.com> (https://github.com/Tangerie)",
+  "license": "ISC",
+  "dependencies": {
+    "@tangerie/builder.js": "^1.0.0",
+    "axios": "^1.5.0",
+    "dotenv": "^16.3.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.197",
+    "@types/node": "^20.5.6",
+    "microbundle": "^0.15.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}
