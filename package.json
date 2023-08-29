@@ -1,6 +1,6 @@
 {
   "name": "@tangerie/dexcom.js",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "source": "src/index.ts",
   "exports": {
@@ -29,7 +29,6 @@
   "author": "Tangerie <josh.cavill01@gmail.com> (https://github.com/Tangerie)",
   "license": "ISC",
   "dependencies": {
-    "@tangerie/builder.js": "^1.0.0",
     "axios": "^1.5.0",
     "dotenv": "^16.3.1",
     "lodash": "^4.17.21"

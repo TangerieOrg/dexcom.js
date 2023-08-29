@@ -1,4 +1,4 @@
-import { Dexcom, GlucoseReadingJSON, GlucoseTrend, TrendArrow, getGlucoseDate, mgToMmol, roundTo } from "../src";
+import { Dexcom } from "../src";
 import dotenv from "dotenv";
 
 dotenv.config();

@@ -21,6 +21,15 @@ export class GlucoseReading {
         const d = this.date;
         return `[${(d.getHours() % 12).toString().padStart(2, '0')}:${d.getMinutes().toString().padStart(2, '0')} ${d.getHours() >= 12 ? "PM" : "AM"} ${d.toLocaleDateString()}] ${this.trendArrow.padEnd(2, " ")} ${this.value.toFixed(2).padEnd(5, " ")} ${GlucoseReading.UseMg ? "mg/dL" : "mmol/L"}`;
     }
+
+    toObject() {
+        return {
+            value: this.value,
+            trend: this.trend,
+            trendArrow: this.trendArrow,
+            date: this.date
+        }
+    }
 }
 
 export class Dexcom {
