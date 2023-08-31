@@ -1,6 +1,6 @@
 {
   "name": "@tangerie/dexcom.js",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "source": "src/index.ts",
   "exports": {
