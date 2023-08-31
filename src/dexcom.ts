@@ -27,7 +27,7 @@ export class GlucoseReading {
             value: this.value,
             trend: this.trend,
             trendArrow: this.trendArrow,
-            date: this.date
+            date: this.date.getTime()
         }
     }
 }
