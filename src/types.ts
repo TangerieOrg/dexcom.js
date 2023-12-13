@@ -33,3 +33,9 @@ export interface GlucoseReadingJSON {
     ST: string;
     DT: string;
 }
+
+// Change in 30 mins
+export interface GlucoseTrendMeaning {
+    max : number;
+    min : number;
+}
